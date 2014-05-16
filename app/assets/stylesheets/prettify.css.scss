@@ -1,0 +1,38 @@
+@import "bootstrap-custom";
+
+pre {
+  .com { color: #93a1a1; }
+  .lit { color: #195f91; }
+  .pun, .opn, .clo { color: #93a1a1; }
+  .fun { color: #dc322f; }
+  .str, .atv { color: #D14; }
+  .kwd, .linenums .tag { color: #1e347b; }
+  .typ, .atn, .dec, .var { color: teal; }
+  .pln { color: #48484c; }
+
+  &.prettyprint {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd!important;
+    line-height: 1.5;
+    padding: 6px 10px;
+    border-radius: 3px;
+  }
+  &.prettyprint.linenums {
+    -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+       -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+            box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+  }
+  &.linenums {
+    padding: 6px 0;
+    ol.linenums {
+      // margin: 0 0 0 33px; /* IE indents via margin-left */
+    }
+    ol.linenums li {
+      list-style-type: decimal-leading-zero;
+      padding-left: 12px;
+      color: #bebec5;
+      line-height: 18px;
+      text-shadow: 0 1px 0 #fff;
+    }
+  }
+}

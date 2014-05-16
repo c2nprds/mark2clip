@@ -1,0 +1,151 @@
+<script type="text/javascript" src="http://static.evernote.com/noteit.js"></script>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6" id="markdown-container">
+      <div class="title clearfix">
+        <select name="provider" id="provider" class="pull-right">
+          <option value="gfm">GitHub Flavored Markdown</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" id="markdown" name="markdown">
+# Basic writing
+## Paragraphs
+Paragraphs in Markdown are just one or more lines of consecutive text followed by one or more blank lines.
+
+```
+On July 2, an alien mothership entered Earth's orbit and deployed several dozen saucer-shaped "destroyer" spacecraft, each 15 miles (24 km) wide.
+
+On July 3, the Black Knights, a squadron of Marine Corps F/A-18 Hornets, participated in an assault on a destroyer near the city of Los Angeles.
+```
+
+## Headings
+You can create a heading by adding one or more `#` symbols before your heading text. The number of `#` you use will determine the size of the heading.
+
+```
+# The largest heading (an <h1> tag)
+## The second largest heading (an <h2> tag)
+…
+###### The 6th largest heading (an <h6> tag)
+```
+
+## Blockquotes
+You can indicate blockquotes with a `>`.
+
+```
+In the words of Abraham Lincoln:
+
+> Pardon my french
+```
+
+## Styling text
+You can make text **bold** or *italic*.
+
+```
+*This text will be italic*
+**This text will be bold**
+```
+
+Both **bold** and *italic* can use either a `*` or an `_` around the text for styling. This allows you to combine both bold and italic if needed.
+
+```
+**Everyone _must_ attend the meeting at 5 o'clock today.**
+```
+
+# Lists
+## Unordered lists
+You can make an unordered list by preceding list items with either a `*` or a `-`.
+
+```
+* Item
+* Item
+* Item
+
+- Item
+- Item
+- Item
+```
+
+## Ordered lists
+You can make an ordered list by preceding list items with a number.
+
+```
+1. Item 1
+2. Item 2
+3. Item 3
+```
+
+# Links
+You can create an inline link, by wrapping link text in brackets ( `[ ]` ), and then wrapping the link in parenthesis ( `( )` ).
+
+For example, to create a hyperlink to www.github.com, with a link text that says, Visit GitHub!, you'd write this in Markdown: `[Visit GitHub!](www.github.com)`.
+
+
+# GitHub Flavored Markdown
+## Strikethrough
+GFM adds syntax to create strikethrough text, which is missing from standard Markdown.
+
+```
+~~Mistaken text.~~
+```
+
+## Tables
+You can create tables by assembling a list of words and dividing them with hyphens `-` (for the first row), and then separating each column with a pipe `|`:
+
+```
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell
+```
+For aesthetic purposes, you can also add extra pipes on the ends:
+
+```
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+```
+Note that the dashes at the top don't need to match the length of the header text exactly:
+
+```
+| Name | Description          |
+| ------------- | ----------- |
+| Help      | Display the help window.|
+| Close     | Closes a window     |
+```
+You can also include inline Markdown such as links, bold, italics, or strikethrough:
+
+```
+| Name | Description          |
+| ------------- | ----------- |
+| Help      | ~~Display the~~ help window.|
+| Close     | _Closes_ a window     |
+```
+Finally, by including colons `:` within the header row, you can define text to be left-aligned, right-aligned, or center-aligned:
+
+```
+| Left-Aligned  | Center Aligned  | Right Aligned |
+| :------------ |:---------------:| -----:|
+| col 3 is      | some wordy text | $1600 |
+| col 2 is      | centered        |   $12 |
+| zebra stripes | are neat        |    $1 |
+```
+A colon on the **left-most** side indicates a left-aligned column; a colon on the **right-most** side indicates a **right-aligned** column; a colon on both sides indicates a center-aligned column.
+        </textarea>
+      </div>
+    </div>
+    <div class="col-xs-6" id="preview-container">
+      <div class="title clearfix">
+        <a href="#" onclick="Evernote.doClip({ title:'Mark2Clip', url:'http://www.mark2clip.com', contentId:'preview', styling: 'full' });return false;">
+          <img src="http://static.evernote.com/article-clipper.png" alt="clip to evernote" />
+        </a>
+
+        <a id="full_btn" class="pull-right" href="javascript:void(0);" title="full"><i class="glyphicon glyphicon-resize-full"></i></a>
+        <a id="half_btn" class="pull-right" href="javascript:void(0);" title="half" style="display:none"><i class="glyphicon glyphicon-resize-small"></i></a>
+      </div>
+      <article id="preview" class="body"></article>
+    </div>
+  </div>
+</div>

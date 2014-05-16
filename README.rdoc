@@ -1,0 +1,25 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+Ruby `2.1.2`
+
+* System dependencies
+Ruby on Rails `4.1.0`
+
+* How to run the test suite
+This runs `bundle exec guard` or `guard` to watch your app files and kicks off the `spring rspec` command to run your changed spec file or suite.
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.

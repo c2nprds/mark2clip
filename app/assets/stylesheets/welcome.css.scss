@@ -1,0 +1,71 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap-custom";
+
+#markdown-container, #preview-container {
+  .title {
+    @include border-top-radius(3px);
+    border: 1px solid $default-border-color;
+    border-bottom: 0 none;
+    line-height: 17px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f7f7f7;
+    a {
+      line-height: 1;
+      font-size: 17px;
+      height: 17px;
+      display: inline-block;
+      color: #666;
+      margin-right: 10px;
+      i, img {
+        vertical-align: bottom;
+      }
+    }
+  }
+}
+
+#markdown-container #markdown,
+#preview-container #preview {
+  @include border-bottom-radius(3px);
+  @include border-top-radius(0);
+  box-shadow: none;
+  border: 1px solid $default-border-color;
+}
+
+
+#markdown-container {
+  #markdown {
+    padding: 30px;
+    max-width: 100%;
+    min-height: 400px;
+  }
+}
+
+#preview-container {
+  #preview {
+    background-color: #fff;
+    padding: 30px;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+
+  table {
+    width: 100%;
+    thead {
+      vertical-align: middle;
+      border-color: inherit;
+    }
+    tr {
+      background-color: #fff;
+      vertical-align: inherit;
+      &:nth-child(2n) {background-color: $table-bg-accent;}
+      th, td {
+        border: 1px solid $default-border-color;
+        padding: 6px 13px;
+      }
+    }
+  }
+}
