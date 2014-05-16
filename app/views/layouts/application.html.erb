@@ -29,15 +29,13 @@
   <div class="clearfix">
     <ul class="social-button pull-right">
       <li>
-        <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="http://platform.twitter.com/widgets/tweet_button.1400006231.html#_=1400042913159&amp;count=vertical&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=http%3A%2F%2Flocalhost%3A3000%2F&amp;size=m&amp;text=Mark2Clip&amp;url=http%3A%2F%2Fwww.mark2clip.com" class="twitter-share-button twitter-tweet-button twitter-share-button twitter-count-vertical" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 56px; height: 62px;"></iframe>
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.mark2clip.com">Tweet</a>
       </li>
       <li>
-        <div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; padding-top: 1px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 50px; height: 60px; background-position: initial initial; background-repeat: initial initial;">
-          <iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 50px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 60px;" tabindex="0" vspace="0" width="100%" id="I1_1400042917083" name="I1_1400042917083" src="https://apis.google.com/u/0/_/+1/fastbutton?usegapi=1&amp;size=tall&amp;hl=ja&amp;origin=http%3A%2F%2Flocalhost%3A3000&amp;url=http%3A%2F%2Fwww.mark2clip.com%2F&amp;gsrc=3p&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.ja.E2MERMN0n6E.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Fz%3Dzcms%2Frs%3DAItRSTNRlC1NkzaOPXG2Xb0rPmMMUBF7dA#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I1_1400042917083&amp;parent=http%3A%2F%2Flocalhost%3A3000&amp;pfname=&amp;rpctoken=35426664" data-gapiattached="true" title="+1"></iframe>
-        </div>
+        <div class="g-plusone" data-size="medium" data-href="http://www.mark2clip.com"></div>
       </li>
       <li>
-        <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.mark2clip.com&amp;width&amp;layout=box_count&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=65&amp;appId=1461555067399045" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:65px;width:69px;" allowTransparency="true"></iframe>
+        <div class="fb-like" data-href="http://www.mark2clip.com" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
       </li>
     </ul>
   </div>
@@ -50,6 +48,17 @@
     <li><a href="//github.com/dcurtis/markdown-mark">@dcurtis/markdown-mark</a></li>
   </ul>
 </footer>
+
+
+<%# Facebook Like %>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=1461555067399045&version=v2.0";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+
+<%# Twitter Share %>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<%# Google+ %>
+<script type="text/javascript">(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/platform.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script>
 
 <%# Google Analytics %>
 <script>
